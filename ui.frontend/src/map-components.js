@@ -7,6 +7,9 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
 import Main from './components/Main/Main'
+
+// Pedro
+import TextPedro from './components/micro/Text/Text'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -73,3 +76,5 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+MapTo('vue/components/text-pedro')(TextPedro)
