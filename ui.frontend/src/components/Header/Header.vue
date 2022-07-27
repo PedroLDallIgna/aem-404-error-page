@@ -1,29 +1,34 @@
 <template>
-  <header>{{ text }}</header>
+  <header>
+    <h1 :style="{ fontSize: formatHeaderFontSize, color: headerColor }">{{ headerContent }}</h1>
+  </header>
 </template>
 
 <script>
-// Imports
-
 export default {
-  name: 'Header',
+  name: 'HeaderPedro',
   props: {
-    text: {
-      type: String
+    headerContent: {
+      type: String,
+      default: '404 not found'
+    },
+    headerFontSize: {
+      type: Number,
+      default: 24
+    },
+    headerColor: {
+      type: String,
+      default: '#333333'
+    }
+  },
+  computed: {
+    formatHeaderFontSize () {
+      return (this.headerFontSize / 16) + 'em'
     }
   }
 }
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
-header {
-  font-family: Inconsolata;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 25px;
-  letter-spacing: -0.08em;
-  text-align: left;
-  margin: 2vw 0 0 2vw;
-}
+<style lang="scss" scoped>
+@import './Header.scss';
 </style>
