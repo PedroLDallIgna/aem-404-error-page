@@ -11,6 +11,7 @@ import Main from './components/Main/Main'
 // Pedro
 import TextPedro from './components/micro/Text/Text'
 import TitlePedro from './components/micro/Title/Title'
+import ButtonPedro from './components/micro/Button/Button'
 
 import {
   withComponentMappingContext,
@@ -81,3 +82,4 @@ MapTo('vue/components/container')(
 
 MapTo('vue/components/text-pedro')(TextPedro)
 MapTo('vue/components/title-pedro')(TitlePedro)
+MapTo('vue/components/button-pedro')(ButtonPedro)

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items 
+            jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items 
+                    jcr:primaryType="nt:unstructured">
+                    <buttonContent
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Conteúdo"
+                        emptyText="Texto que será exibido"
+                        name="./buttonContent"/>
+                    <buttonType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Estilo do Botão"
+                        name="./buttonType">
+                        <items
+                            jcr:primaryType="nt:unstructured">
+                            <primary
+                                jcr:primaryType="nt:unstructured"
+                                text="Primário"
+                                value="primary"/>
+                            <secundary
+                                jcr:primaryType="nt:unstructured"
+                                text="Secundário"
+                                value="secondary"/>
+                            <terciary
+                                jcr:primaryType="nt:unstructured"
+                                text="Terciário"
+                                value="terciary"/>
+                        </items>
+                    </buttonType>
+                    <buttonFontSize
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                        fieldLabel="Tamanho do texto do Botão (em px)"
+                        emptyText="Padrão 14"
+                        name="./buttonFontSize"/>
+                    <!-- <titleColor
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                        fieldLabel="Cor do texto"
+                        emptyText="Padrão: #000000"
+                        showDefaultColors="false"
+                        name="./titleColor">
+                        <items
+                            jcr:primaryType="nt:unstructured">
+                            <black
+                                jcr:primaryType="nt:unstructured"
+                                value="#000000"/>
+                            <blue
+                                jcr:primaryType="nt:unstructured"
+                                value="#0000FF"/>
+                            <green
+                                jcr:primaryType="nt:unstructured"
+                                value="#00FF00"/>
+                            <red
+                                jcr:primaryType="nt:unstructured"
+                                value="#FF0000"/>
+                        </items>
+                    </titleColor> -->
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

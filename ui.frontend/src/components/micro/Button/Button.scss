@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+$primary-bg-color: #333333;
+$primary-font-color: #ffffff;
+$secondary-bg-color: #000088;
+$secondary-font-color: #cccccc;
+$terciary-bg-color: #cccccc;
+$terciary-font-color: #000088;
+$terciary-border-color: #000088;
+
+button {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.035em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.primary {
+    background-color: $primary-bg-color;
+    color: $primary-font-color;
+    padding: 25px 45px;
+}
+
+.secondary {
+    background-color: $secondary-bg-color;
+    color: $secondary-font-color;
+    padding: 20px 40px;
+}
+
+.terciary {
+    background-color: $terciary-bg-color;
+    color: $terciary-font-color;
+    border: 2px solid $terciary-border-color;
+    padding: 20px 40px;
+}
