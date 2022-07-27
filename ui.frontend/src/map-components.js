@@ -13,6 +13,7 @@ import TextPedro from './components/micro/Text/Text'
 import TitlePedro from './components/micro/Title/Title'
 import ButtonPedro from './components/micro/Button/Button'
 import HeaderPedro from './components/Header/Header'
+import FooterPedro from './components/Footer/Footer'
 
 import {
   withComponentMappingContext,
@@ -85,3 +86,4 @@ MapTo('vue/components/text-pedro')(TextPedro)
 MapTo('vue/components/title-pedro')(TitlePedro)
 MapTo('vue/components/button-pedro')(ButtonPedro)
 MapTo('vue/components/header-pedro')(HeaderPedro)
+MapTo('vue/components/footer-pedro')(FooterPedro)
