@@ -15,6 +15,7 @@ import ButtonPedro from './components/micro/Button/Button'
 import HeaderPedro from './components/Header/Header'
 import FooterPedro from './components/Footer/Footer'
 import ImagePedro from './components/micro/Image/Image'
+import MainPedro from './components/containers/Main/Main'
 
 import {
   withComponentMappingContext,
@@ -89,3 +90,4 @@ MapTo('vue/components/button-pedro')(ButtonPedro)
 MapTo('vue/components/header-pedro')(HeaderPedro)
 MapTo('vue/components/footer-pedro')(FooterPedro)
 MapTo('vue/components/image-pedro')(ImagePedro)
+MapTo('vue/components/main-pedro')(MainPedro)

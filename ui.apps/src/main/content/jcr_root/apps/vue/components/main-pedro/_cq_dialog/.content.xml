@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items
+            jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items
+                    jcr:primaryType="nt:unstructured">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Imagem"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <imgSource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Escolha a imagem"
+                                name="./imgSource"/>
+                            <imgDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Descrição da imagem"
+                                name="./imgDescription"/>
+                        </items>
+                    </image>
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Título"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <titleContent
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Conteúdo"
+                                emptyText="Texto que será exibido"
+                                name="./titleContent"/>
+                            <titleType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Tipo/Nível do Título"
+                                name="./titleType">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H1"
+                                        value="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H2"
+                                        value="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H3"
+                                        value="h3"/>
+                                </items>
+                            </titleType>
+                            <titleSize
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Tamanho do título (em px)"
+                                emptyText="Padrão 64"
+                                name="./titleSize"/>
+                            <titleColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Cor do texto"
+                                emptyText="Padrão: #000000"
+                                showDefaultColors="false"
+                                name="./titleColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <black
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <red
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                </items>
+                            </titleColor>
+                        </items>
+                    </title>
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Texto"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <textContent
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Conteúdo"
+                                emptyText="Texto que será exibido"
+                                name="./textContent"/>
+                            <textSize
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Tamanho do texto (em px)"
+                                emptyText="Padrão: 24"
+                                name="./textSize"/>
+                            <textColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldLabel="Cor do texto"
+                                showDefaultColors="false"
+                                emptyText="Padrão: #000000"
+                                name="./textColor">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <black
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#000000"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#0000FF"/>
+                                    <green
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#00FF00"/>
+                                    <red
+                                        jcr:primaryType="nt:unstructured"
+                                        value="#FF0000"/>
+                                </items>
+                            </textColor>
+                        </items>
+                    </text>
+                    <button
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Botão"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items 
+                            jcr:primaryType="nt:unstructured">
+                            <buttonContent
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Conteúdo"
+                                emptyText="Texto que será exibido"
+                                name="./buttonContent"/>
+                            <buttonType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Estilo do Botão"
+                                name="./buttonType">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <primary
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primário"
+                                        value="primary"/>
+                                    <secundary
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Secundário"
+                                        value="secondary"/>
+                                    <terciary
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Terciário"
+                                        value="terciary"/>
+                                </items>
+                            </buttonType>
+                            <buttonFontSize
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Tamanho do texto do Botão (em px)"
+                                emptyText="Padrão 14"
+                                name="./buttonFontSize"/>
+                        </items>
+                    </button>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
