@@ -1,5 +1,7 @@
 <template>
-  <p :style="{ fontSize: formatFooterFontSize, color: footerFontColor }">created by <span class="username">{{ username }}</span> - <a href="https://devchallenges.io" :style="{ color: footerFontColor }">devChallenges.io</a></p>
+    <footer>
+        <p :style="{ fontSize: formatFooterFontSize, color: footerFontColor }">created by <span class="username">{{ username }}</span> - <a href="https://devchallenges.io" :style="{ color: footerFontColor }">devChallenges.io</a></p>
+    </footer>
 </template>
 
 <script>
