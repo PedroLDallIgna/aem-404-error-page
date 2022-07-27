@@ -1,5 +1,5 @@
 <template>
-    <p :style="{ fontSize: transformTextSize + 'em', color: textColor }">{{ textContent }}</p>
+    <p :style="{ fontSize: formatTextSize, color: textColor }">{{ textContent }}</p>
 </template>
 
 <script>
@@ -11,8 +11,8 @@ export default {
       default: 'The page you are looking for might be removed or is temporarily unavailable'
     },
     textSize: {
-      type: Number,
-      default: 24
+      type: String,
+      default: '24'
     },
     textColor: {
       type: String,
@@ -20,8 +20,8 @@ export default {
     }
   },
   computed: {
-    transformTextSize () {
-      return this.textSize / 16
+    formatTextSize () {
+      return (Number(this.textSize) / 16) + 'em'
     }
   }
 }

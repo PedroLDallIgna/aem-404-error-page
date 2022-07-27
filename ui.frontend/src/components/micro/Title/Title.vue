@@ -17,8 +17,8 @@ export default {
       default: 'I have bad news for you'
     },
     titleSize: {
-      type: Number,
-      default: 64
+      type: String,
+      default: '64'
     },
     titleColor: {
       type: String,
@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     formatTitleSize () {
-      return (this.titleSize / 16) + 'em'
+      return (Number(this.titleSize) / 16) + 'em'
     }
   }
 }

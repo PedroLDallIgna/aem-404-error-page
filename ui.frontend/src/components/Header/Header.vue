@@ -13,8 +13,8 @@ export default {
       default: '404 not found'
     },
     headerFontSize: {
-      type: Number,
-      default: 24
+      type: String,
+      default: '24'
     },
     headerColor: {
       type: String,

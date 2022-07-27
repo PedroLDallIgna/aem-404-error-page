@@ -11,8 +11,8 @@ export default {
       default: 'Back to homepage'
     },
     buttonFontSize: {
-      type: Number,
-      default: 14
+      type: String,
+      default: '14'
     },
     buttonType: {
       type: String,
@@ -24,7 +24,7 @@ export default {
       return this.buttonContent.toUpperCase()
     },
     formatButtonFontSize () {
-      return (this.buttonFontSize / 16) + 'em'
+      return (Number(this.buttonFontSize) / 16) + 'em'
     }
   }
 }
