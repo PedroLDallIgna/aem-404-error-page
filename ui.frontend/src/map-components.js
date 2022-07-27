@@ -5,7 +5,7 @@ import CheckBox from './components/Checkbox/Checkbox'
 import Select from './components/Select/Select'
 import Header from './components/HeaderDefault/Header'
 import Footer from './components/FooterDefault/Footer'
-import Image from './components/Image/Image'
+import Image from './components/ImageDefault/Image'
 import Main from './components/Main/Main'
 
 // Pedro
@@ -14,6 +14,7 @@ import TitlePedro from './components/micro/Title/Title'
 import ButtonPedro from './components/micro/Button/Button'
 import HeaderPedro from './components/Header/Header'
 import FooterPedro from './components/Footer/Footer'
+import ImagePedro from './components/micro/Image/Image'
 
 import {
   withComponentMappingContext,
@@ -87,3 +88,4 @@ MapTo('vue/components/title-pedro')(TitlePedro)
 MapTo('vue/components/button-pedro')(ButtonPedro)
 MapTo('vue/components/header-pedro')(HeaderPedro)
 MapTo('vue/components/footer-pedro')(FooterPedro)
+MapTo('vue/components/image-pedro')(ImagePedro)
