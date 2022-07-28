@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-h1 {
-    font-family: 'Inconsolata', monospace;
-    font-weight: 700;
-    letter-spacing: -0.08em;
-    margin: 4vh 0 4vh 10vw;
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    h1 {
+        font-family: 'Inconsolata', monospace;
+        font-weight: 700;
+        letter-spacing: -0.08em;
+        margin: 4vh 0 2vh 6vw;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        position: static;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        margin-bottom: 4vh;
+    }
 }

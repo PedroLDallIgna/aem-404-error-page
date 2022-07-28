@@ -1,5 +1,5 @@
 <template>
-  <button :class="buttonType" :style="{ fontSize: formatButtonFontSize }">{{ transformButtonContent }}</button>
+  <button type="submit" :class="buttonType" :style="{ fontSize: formatButtonFontSize }">{{ transformButtonContent }}</button>
 </template>
 
 <script>
