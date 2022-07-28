@@ -1,16 +1,21 @@
 <template>
     <main>
-        <div class="imgContainer">
+        <div
+            v-show="getShowImg"
+            class="imgContainer"
+            >
             <image-pedro :imgSource="imgSource" :imgDescription="imgDescription"/>
         </div>
         <div class="infoContainer">
             <title-pedro
+                v-show="getShowTitle"
                 class="title"
                 :titleContent="titleContent"
                 :titleColor="titleColor"
                 :titleSize="titleSize"
                 :titleType="titleType"/>
             <text-pedro
+                v-show="getShowText"
                 class="text"
                 :textContent="textContent"
                 :textColor="textColor"
@@ -38,6 +43,10 @@ export default {
     ButtonPedro
   },
   props: {
+    showImg: {
+      type: String,
+      default: ' '
+    },
     imgSource: {
       type: String,
       default: '/content/dam/vue/espantalho.png'
@@ -45,6 +54,10 @@ export default {
     imgDescription: {
       type: String,
       default: 'Espantalho'
+    },
+    showTitle: {
+      type: String,
+      default: ' '
     },
     titleContent: {
       type: String,
@@ -61,6 +74,10 @@ export default {
     titleType: {
       type: String,
       default: 'h1'
+    },
+    showText: {
+      type: String,
+      default: ' '
     },
     textContent: {
       type: String,
@@ -85,6 +102,17 @@ export default {
     buttonType: {
       type: String,
       default: 'primary'
+    }
+  },
+  computed: {
+    getShowImg () {
+      return Boolean(this.showImg)
+    },
+    getShowTitle () {
+      return Boolean(this.showTitle)
+    },
+    getShowText () {
+      return Boolean(this.showText)
     }
   }
 }
