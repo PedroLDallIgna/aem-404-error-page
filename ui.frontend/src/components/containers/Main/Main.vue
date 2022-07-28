@@ -5,15 +5,18 @@
         </div>
         <div class="infoContainer">
             <title-pedro
+                class="title"
                 :titleContent="titleContent"
                 :titleColor="titleColor"
                 :titleSize="titleSize"
                 :titleType="titleType"/>
             <text-pedro
+                class="text"
                 :textContent="textContent"
                 :textColor="textColor"
                 :textSize="textSize"/>
             <button-pedro
+                class="button"
                 :buttonContent="buttonContent"
                 :buttonFontSize="buttonFontSize"
                 :buttonType="buttonType"/>
@@ -88,5 +91,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import './Main.scss';
 </style>
