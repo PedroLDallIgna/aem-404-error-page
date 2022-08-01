@@ -1,5 +1,4 @@
 import CustomClasses from './components/CustomClasses/CustomClasses'
-import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Select from './components/Select/Select'
@@ -69,13 +68,7 @@ MapTo('vue/components/image')(Image, {
 })
 
 // Text Component Mapping
-MapTo('vue/components/text')(Text, {
-  emptyLabel: 'Text',
-
-  isEmpty: function (props) {
-    return !props || !props.text || props.text.trim().length < 1
-  }
-})
+MapTo('vue/components/text')(TextPedro)
 
 // Container Component Mapping
 MapTo('vue/components/container')(

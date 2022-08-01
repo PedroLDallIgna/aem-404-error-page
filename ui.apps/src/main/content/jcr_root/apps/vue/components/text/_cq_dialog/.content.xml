@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:primaryType="nt:unstructured"
-    jcr:title="Properties"
-    sling:resourceType="cq/gui/components/authoring/dialog">
-    <content
-        jcr:primaryType="nt:unstructured"
-        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
-        <items jcr:primaryType="nt:unstructured">
-            <column
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/container">
-                <items jcr:primaryType="nt:unstructured">
-                    <className
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Classe CSS"
-                        name="./className"/>
-                </items>
-            </column>
-        </items>
-    </content>
+<!--
+ |  ***********************************************************************
+ |  SPA Vue Project CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 SPA Vue Project
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of SPA Vue Project and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to SPA Vue Project
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from SPA Vue Project.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Vue - Text"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <textContent cq-msm-lockable="./textContent"
+                            fieldLabel="Conteúdo do texto"
+                            jcr:primaryType="nt:unstructured"
+                            name="./textContent"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+               <textSize cq-msm-lockable="./textSize"
+                         fieldLabel="Tamanho do texto (em px)"
+                         jcr:primaryType="nt:unstructured"
+                         max="{Double}48"
+                         min="{Double}0"
+                         name="./textSize"
+                         sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                         step="1"
+                         value="{Long}24"/>
+               <textColor cq-msm-lockable="./textColor"
+                          defaultValue="#333333"
+                          fieldLabel="Escolha uma cor para o título"
+                          jcr:primaryType="nt:unstructured"
+                          name="./textColor"
+                          showDefaultColors="{Boolean}false"
+                          value="#333333"
+                          variant="default"
+                          sling:resourceType="granite/ui/components/coral/foundation/form/colorfield">
+                  <items jcr:primaryType="nt:unstructured">
+                     <black jcr:primaryType="nt:unstructured" value="#000000"/>
+                     <blue jcr:primaryType="nt:unstructured" value="#0000FF"/>
+                     <green jcr:primaryType="nt:unstructured" value="#00FF00"/>
+                     <red jcr:primaryType="nt:unstructured" value="#FF0000"/>
+                  </items>
+               </textColor>
+            </items>
+         </column>
+      </items>
+   </content>
 </jcr:root>
