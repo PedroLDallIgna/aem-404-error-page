@@ -12,7 +12,7 @@ describe('Button.vue', () => {
       propsData: {
         buttonType: 'primary',
         buttonContent: 'return',
-        buttonFontSize: '14'
+        buttonFontSize: 14
       }
     })
     const buttonEl = wrapper.find('button').element

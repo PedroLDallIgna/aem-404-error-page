@@ -13,7 +13,7 @@ describe('Title.vue', () => {
         titleType: 'h1',
         titleContent: 'Error 404',
         titleColor: '#000000',
-        titleSize: '64'
+        titleSize: 64
       }
     })
     const titleEl = wrapper.find('h1').element

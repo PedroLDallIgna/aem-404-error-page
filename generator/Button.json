@@ -1,0 +1,87 @@
+{
+    "project-settings": {
+        "code-owner": "SPA Vue Project",
+        "bundle-path": "core/src/main/java",
+        "test-path": "core/src/test/java",
+        "apps-path": "ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "vue",
+        "model-interface-pkg": "com.vue.core.models",
+        "model-impl-pkg": "com.vue.core.models.impl"
+    },
+    "name": "button",
+    "title": "Vue - Button",
+    "group": "SPA Vue Project - Content",
+    "type": "components",
+    "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": [
+            "request"
+        ],
+        "generic-javadoc": false,
+        "properties": [
+            {
+                "field": "buttonContent",
+                "type": "textfield",
+                "label": "Conteúdo do botão",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "buttonType",
+                "type": "select",
+                "label": "Estilo do botão",
+                "json-property": "buttonType",
+                "json-expose": true,
+                "attributes": {
+                    "defaultValue": "primary",
+                    "value": "primary"
+                },
+                "items": [
+                    {
+                        "field": "primary",
+                        "attributes": {
+                            "selected": "true",
+                            "text": "Primário",
+                            "value": "primary"
+                        }
+                    },
+                    {
+                        "field": "secondary",
+                        "attributes": {
+                            "text": "Secundário",
+                            "value": "secondary"
+                        }
+                    },
+                    {
+                        "field": "terciary",
+                        "attributes": {
+                            "text": "Terciário",
+                            "value": "terciary"
+                        }
+                    }
+                ]
+            },
+            {
+                "field": "buttonFontSize",
+                "type": "numberfield",
+                "label": "Tamanho do texto do botão (em px)",
+                "json-expose": true,
+                "attributes": {
+                    "max": "{Double}64",
+                    "min": "{Double}8",
+                    "step": "1",
+                    "value": "{Long}14"
+                }
+            }
+      ]
+    }
+}

@@ -11,8 +11,8 @@ export default {
       default: 'Back to homepage'
     },
     buttonFontSize: {
-      type: String,
-      default: '14'
+      type: Number,
+      default: 14
     },
     buttonType: {
       type: String,

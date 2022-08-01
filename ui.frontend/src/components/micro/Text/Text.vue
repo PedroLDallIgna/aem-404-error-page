@@ -11,8 +11,8 @@ export default {
       default: 'The page you are looking for might be removed or is temporarily unavailable'
     },
     textSize: {
-      type: String,
-      default: '24'
+      type: Number,
+      default: 24
     },
     textColor: {
       type: String,

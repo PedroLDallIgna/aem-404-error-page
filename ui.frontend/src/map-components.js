@@ -73,6 +73,9 @@ MapTo('vue/components/text')(TextPedro)
 // Title Component Mapping
 MapTo('vue/components/title')(TitlePedro)
 
+// Button Component Mapping
+MapTo('vue/components/button')(ButtonPedro)
+
 // Container Component Mapping
 MapTo('vue/components/container')(
   withComponentMappingContext(AllowedComponentsContainer),

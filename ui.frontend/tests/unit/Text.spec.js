@@ -12,7 +12,7 @@ describe('Text.vue', () => {
       propsData: {
         textContent: 'Error 404 text',
         textColor: '#0000FF',
-        textSize: '22'
+        textSize: 22
       }
     })
     const textEl = wrapper.find('p').element
