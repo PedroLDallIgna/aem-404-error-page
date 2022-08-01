@@ -1,0 +1,125 @@
+{
+    "project-settings": {
+      "code-owner": "SPA Vue Project",
+      "bundle-path": "core/src/main/java",
+      "test-path": "core/src/test/java",
+      "apps-path": "ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "vue",
+      "model-interface-pkg": "com.vue.core.models",
+      "model-impl-pkg": "com.vue.core.models.impl"
+    },
+    "name": "title",
+    "title": "Vue - Title",
+    "group": "SPA Vue Project - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties": [
+        {
+          "field": "titleContent",
+          "type": "textfield",
+          "label": "Conteúdo do título",
+          "json-expose": true,
+          "attributes": {}
+      },
+      {
+          "field": "titleType",
+          "type": "select",
+          "label": "Tipo/Nível do título",
+          "json-property": "titleType",
+          "json-expose": true,
+          "attributes": {
+              "defaultValue": "h1",
+              "value": "h1"
+          },
+          "items": [
+              {
+                  "field": "h1",
+                  "attributes": {
+                      "selected": "true",
+                      "text": "H1",
+                      "value": "h1"
+                  }
+              },
+              {
+                  "field": "h2",
+                  "attributes": {
+                      "text": "H2",
+                      "value": "h2"
+                  }
+              },
+              {
+                  "field": "h3",
+                  "attributes": {
+                      "text": "H3",
+                      "value": "h3"
+                  }
+              }
+          ]
+        },
+        {
+            "field": "titleSize",
+            "type": "numberfield",
+            "label": "Tamanho do título (em px)",
+            "json-expose": true,
+            "attributes": {
+                "max": "{Double}128",
+                "min": "{Double}16",
+                "step": "1",
+                "value": "{Long}64"
+            }
+        },
+        {
+            "field": "titleColor",
+            "type": "colorfield",
+            "label": "Escolha uma cor para o título",
+            "json-expose": true,
+            "attributes": {
+              "defaultValue": "#333333",
+              "value": "#333333",
+              "showDefaultColors": "{Boolean}false",
+              "variant": "default"
+            },
+            "items": [
+              {
+                  "field": "black",
+                  "attributes": {
+                      "value": "#000000"
+                  }
+              },
+              {
+                  "field": "blue",
+                  "attributes": {
+                      "value": "#0000FF"
+                  }
+              },
+              {
+                  "field": "green",
+                  "attributes": {
+                      "value": "#00FF00"
+                  }
+              },
+              {
+                  "field": "red",
+                  "attributes": {
+                      "value": "#FF0000"
+                  }
+              }
+            ]
+        }
+      ]
+    }
+}

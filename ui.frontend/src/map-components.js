@@ -70,6 +70,9 @@ MapTo('vue/components/image')(Image, {
 // Text Component Mapping
 MapTo('vue/components/text')(TextPedro)
 
+// Title Component Mapping
+MapTo('vue/components/title')(TitlePedro)
+
 // Container Component Mapping
 MapTo('vue/components/container')(
   withComponentMappingContext(AllowedComponentsContainer),

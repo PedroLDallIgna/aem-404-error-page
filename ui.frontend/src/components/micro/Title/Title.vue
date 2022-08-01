@@ -17,8 +17,8 @@ export default {
       default: 'I have bad news for you'
     },
     titleSize: {
-      type: String,
-      default: '64'
+      type: Number,
+      default: 64
     },
     titleColor: {
       type: String,
