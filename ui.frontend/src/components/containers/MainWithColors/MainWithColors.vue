@@ -1,34 +1,37 @@
 <template>
-<div>
-  <div
-      v-show="showImg"
-      class="imgContainer">
-    <image-pedro
-        :imgSource="imgSource"
-        :imgDescription="imgDescription"
-    />
-  </div>
-  <div class="infoContainer">
-    <title-pedro
-        v-show="showTitle"
-        :titleContent="titleContent"
-        :titleType="titleType"
-        :titleSize="titleSize"
-        :titleColor="titleColor"
-    />
-    <text-pedro
-        v-show="showText"
-        :textContent="textContent"
-        :textSize="textSize"
-        :textColor="textColor"
-    />
-    <button-pedro
-        :buttonContent="buttonContent"
-        :buttonType="buttonType"
-        :buttonFontSize="buttonFontSize"
-    />
-  </div>
-</div>
+  <main>
+    <div
+        v-show="showImg"
+        class="imgContainer">
+      <image-pedro
+          :imgSource="imgSource"
+          :imgDescription="imgDescription"
+      />
+    </div>
+    <div class="infoContainer">
+      <title-pedro
+          v-show="showTitle"
+          class="title"
+          :titleContent="titleContent"
+          :titleType="titleType"
+          :titleSize="titleSize"
+          :titleColor="titleColor"
+      />
+      <text-pedro
+          v-show="showText"
+          class="text"
+          :textContent="textContent"
+          :textSize="textSize"
+          :textColor="textColor"
+      />
+      <button-pedro
+          class="button"
+          :buttonContent="buttonContent"
+          :buttonType="buttonType"
+          :buttonFontSize="buttonFontSize"
+      />
+    </div>
+  </main>
 </template>
 
 <script>
@@ -107,6 +110,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@import './MainWithColors.scss';
 </style>

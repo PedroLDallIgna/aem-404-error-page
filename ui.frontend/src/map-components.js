@@ -20,7 +20,7 @@ import MainPedro from './components/containers/Main/Main'
 import Teste from './components/teste/Teste'
 import MainTeste from './components/mainTeste/mainTeste.vue'
 import ColorTeste from './components/color/color.vue'
-import MainWithColors from './components/MainWithColors/MainWithColors.vue'
+import MainWithColors from './components/containers/MainWithColors/MainWithColors.vue'
 
 import {
   withComponentMappingContext,
