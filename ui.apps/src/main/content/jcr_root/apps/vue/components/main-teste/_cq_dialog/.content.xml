@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  SPA Vue Project CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 SPA Vue Project
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of SPA Vue Project and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to SPA Vue Project
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from SPA Vue Project.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Vue - Main Teste"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <items jcr:primaryType="nt:unstructured">
+         <tabs jcr:primaryType="nt:unstructured"
+               sling:resourceType="granite/ui/components/coral/foundation/tabs">
+            <items jcr:primaryType="nt:unstructured">
+               <image-properties jcr:primaryType="nt:unstructured"
+                                 jcr:title="Imagem"
+                                 sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <showImg checked="{Boolean}true"
+                                    cq-msm-lockable="./showImg"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./showImg"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    text="Mostrar imagem?"
+                                    uncheckedValue="{Boolean}false"
+                                    value="{Boolean}true"/>
+                           <imgSource cq-msm-lockable="./imgSource"
+                                      fieldLabel="Escolha a imagem"
+                                      jcr:primaryType="nt:unstructured"
+                                      name="./imgSource"
+                                      rootPath="/content"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                           <imgDescription cq-msm-lockable="./imgDescription"
+                                           fieldLabel="Descrição da imagem"
+                                           jcr:primaryType="nt:unstructured"
+                                           name="./imgDescription"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        </items>
+                     </column>
+                  </items>
+               </image-properties>
+               <title-properties jcr:primaryType="nt:unstructured"
+                                 jcr:title="Título"
+                                 sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <showTitle checked="{Boolean}true"
+                                      cq-msm-lockable="./showTitle"
+                                      jcr:primaryType="nt:unstructured"
+                                      name="./showTitle"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                      text="Mostrar título?"
+                                      uncheckedValue="{Boolean}false"
+                                      value="{Boolean}true"/>
+                           <titleContent cq-msm-lockable="./titleContent"
+                                         fieldLabel="Conteúdo do título"
+                                         jcr:primaryType="nt:unstructured"
+                                         name="./titleContent"
+                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <titleType cq-msm-lockable="./titleType"
+                                      defaultValue="h1"
+                                      fieldLabel="Tipo/Nível do título"
+                                      jcr:primaryType="nt:unstructured"
+                                      name="./titleType"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                      value="h1">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <h1 jcr:primaryType="nt:unstructured"
+                                     selected="true"
+                                     text="H1"
+                                     value="h1"/>
+                                 <h2 jcr:primaryType="nt:unstructured" text="H2" value="h2"/>
+                                 <h3 jcr:primaryType="nt:unstructured" text="H3" value="h3"/>
+                              </items>
+                           </titleType>
+                           <titleSize cq-msm-lockable="./titleSize"
+                                      fieldLabel="Tamanho do título (em px)"
+                                      jcr:primaryType="nt:unstructured"
+                                      max="{Double}128"
+                                      min="{Double}16"
+                                      name="./titleSize"
+                                      sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                      step="1"
+                                      value="{Long}64"/>
+                        </items>
+                     </column>
+                  </items>
+               </title-properties>
+               <text-properties jcr:primaryType="nt:unstructured"
+                                jcr:title="Texto"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <showText checked="{Boolean}false"
+                                     cq-msm-lockable="./showText"
+                                     jcr:primaryType="nt:unstructured"
+                                     name="./showText"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                     text="Mostrar texto?"
+                                     uncheckedValue="{Boolean}false"
+                                     value="{Boolean}true"/>
+                           <textContent cq-msm-lockable="./textContent"
+                                        fieldLabel="Conteúdo do texto"
+                                        jcr:primaryType="nt:unstructured"
+                                        name="./textContent"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <textSize cq-msm-lockable="./textSize"
+                                     fieldLabel="Tamanho do texto (em px)"
+                                     jcr:primaryType="nt:unstructured"
+                                     max="{Double}48"
+                                     min="{Double}0"
+                                     name="./textSize"
+                                     sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                     step="1"
+                                     value="{Long}24"/>
+                        </items>
+                     </column>
+                  </items>
+               </text-properties>
+               <button-properties jcr:primaryType="nt:unstructured"
+                                  jcr:title="Botão"
+                                  sling:resourceType="granite/ui/components/coral/foundation/container">
+                  <layout jcr:primaryType="nt:unstructured"
+                          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                  <items jcr:primaryType="nt:unstructured">
+                     <column jcr:primaryType="nt:unstructured"
+                             sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                           <buttonContent cq-msm-lockable="./buttonContent"
+                                          fieldLabel="Conteúdo do botão"
+                                          jcr:primaryType="nt:unstructured"
+                                          name="./buttonContent"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                           <buttonType cq-msm-lockable="./buttonType"
+                                       defaultValue="primary"
+                                       fieldLabel="Estilo do botão"
+                                       jcr:primaryType="nt:unstructured"
+                                       name="./buttonType"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                       value="primary">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <primary jcr:primaryType="nt:unstructured"
+                                          selected="true"
+                                          text="Primário"
+                                          value="primary"/>
+                                 <secondary jcr:primaryType="nt:unstructured"
+                                            text="Secundário"
+                                            value="secondary"/>
+                                 <terciary jcr:primaryType="nt:unstructured" text="Terciário" value="terciary"/>
+                              </items>
+                           </buttonType>
+                           <buttonFontSize cq-msm-lockable="./buttonFontSize"
+                                           fieldLabel="Tamanho do texto do botão (em px)"
+                                           jcr:primaryType="nt:unstructured"
+                                           max="{Double}64"
+                                           min="{Double}8"
+                                           name="./buttonFontSize"
+                                           sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                           step="1"
+                                           value="{Long}14"/>
+                        </items>
+                     </column>
+                  </items>
+               </button-properties>
+            </items>
+         </tabs>
+      </items>
+   </content>
+</jcr:root>

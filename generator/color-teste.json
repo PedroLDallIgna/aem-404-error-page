@@ -1,0 +1,65 @@
+{
+    "project-settings": {
+      "code-owner": "SPA Vue Project",
+      "bundle-path": "core/src/main/java",
+      "test-path": "core/src/test/java",
+      "apps-path": "ui.apps/src/main/content/jcr_root/apps",
+      "component-path": "vue",
+      "model-interface-pkg": "com.vue.core.models",
+      "model-impl-pkg": "com.vue.core.models.impl"
+    },
+    "name": "color",
+    "title": "Vue - Color",
+    "group": "SPA Vue Project - Content",
+    "type": "components",
+    "options": {
+      "js": false,
+      "jstxt": false,
+      "css": false,
+      "csstxt": false,
+      "html": false,
+      "html-content": false,
+      "slingmodel": true,
+      "testclass": false,
+      "junit-major-version": 5,
+      "content-exporter": true,
+      "model-adaptables": [
+        "request"
+      ],
+      "generic-javadoc": false,
+      "properties": [
+        {
+          "field": "color",
+          "type": "colorfield",
+          "label": "Escolha uma cor",
+          "json-expose": true,
+          "attributes": {
+            "defaultValue": "#333333",
+            "value": "#333333",
+            "showDefaultColors": "{Boolean}false",
+            "variant": "default"
+          },
+          "items": [
+            {
+                "field": "black",
+                "attributes": {
+                    "value": "#000000"
+                }
+            },
+            {
+                "field": "blue",
+                "attributes": {
+                    "value": "#0000FF"
+                }
+            },
+            {
+                "field": "green",
+                "attributes": {
+                    "value": "#00FF00"
+                }
+            }
+          ]
+        }
+      ]
+    }
+}

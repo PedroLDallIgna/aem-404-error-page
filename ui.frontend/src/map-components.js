@@ -17,6 +17,10 @@ import FooterPedro from './components/Footer/Footer'
 import ImagePedro from './components/micro/Image/Image'
 import MainPedro from './components/containers/Main/Main'
 
+import Teste from './components/teste/Teste'
+import MainTeste from './components/mainTeste/mainTeste.vue'
+import ColorTeste from './components/color/color.vue'
+
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -91,3 +95,6 @@ MapTo('vue/components/header-pedro')(HeaderPedro)
 MapTo('vue/components/footer-pedro')(FooterPedro)
 MapTo('vue/components/image-pedro')(ImagePedro)
 MapTo('vue/components/main-pedro')(MainPedro)
+MapTo('vue/components/teste')(Teste)
+MapTo('vue/components/main-teste')(MainTeste)
+MapTo('vue/components/color')(ColorTeste)
