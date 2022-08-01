@@ -20,6 +20,7 @@ import MainPedro from './components/containers/Main/Main'
 import Teste from './components/teste/Teste'
 import MainTeste from './components/mainTeste/mainTeste.vue'
 import ColorTeste from './components/color/color.vue'
+import MainWithColors from './components/MainWithColors/MainWithColors.vue'
 
 import {
   withComponentMappingContext,
@@ -98,3 +99,4 @@ MapTo('vue/components/main-pedro')(MainPedro)
 MapTo('vue/components/teste')(Teste)
 MapTo('vue/components/main-teste')(MainTeste)
 MapTo('vue/components/color')(ColorTeste)
+MapTo('vue/components/main-colors')(MainWithColors)

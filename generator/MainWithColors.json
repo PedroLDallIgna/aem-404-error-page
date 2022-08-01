@@ -1,0 +1,326 @@
+{
+    "project-settings": {
+        "code-owner": "SPA Vue Project",
+        "bundle-path": "core/src/main/java",
+        "test-path": "core/src/test/java",
+        "apps-path": "ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "vue",
+        "model-interface-pkg": "com.vue.core.models",
+        "model-impl-pkg": "com.vue.core.models.impl"
+      },
+      "name": "main-colors",
+      "title": "Vue - Main Teste w/ colors",
+      "group": "SPA Vue Project - Content",
+      "type": "components",
+      "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": [
+          "request"
+        ],
+        "generic-javadoc": false,
+        "properties-tabs": [
+            {
+                "id": "image-properties",
+                "label": "Imagem",
+                "fields": [
+                    "showImg",
+                    "imgSource",
+                    "imgDescription"
+                ]
+            },
+            {
+                "id": "title-properties",
+                "label": "Título",
+                "fields": [
+                    "showTitle",
+                    "titleContent",
+                    "titleType",
+                    "titleSize",
+                    "titleColor"
+                ]
+            },
+            {
+                "id": "text-properties",
+                "label": "Texto",
+                "fields": [
+                    "showText",
+                    "textContent",
+                    "textSize",
+                    "textColor"
+                ]
+            },
+            {
+                "id": "button-properties",
+                "label": "Botão",
+                "fields": [
+                    "buttonContent",
+                    "buttonType",
+                    "buttonFontSize"
+                ]
+            }
+        ],
+        "properties": [
+            {
+                "field": "showImg",
+                "type": "checkbox",
+                "json-expose": true,
+                "attributes": {
+                    "value": "{Boolean}true",
+                    "uncheckedValue": "{Boolean}false",
+                    "checked": "{Boolean}true",
+                    "text": "Mostrar imagem?"
+                }
+            },
+            {
+                "field": "imgSource",
+                "type": "pathfield",
+                "label": "Escolha a imagem",
+                "json-expose": true,
+                "attributes": {
+                    "rootPath": "/content"
+                }
+            },
+            {
+                "field": "imgDescription",
+                "type": "textfield",
+                "label": "Descrição da imagem",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "showTitle",
+                "type": "checkbox",
+                "json-expose": true,
+                "attributes": {
+                    "value": "{Boolean}true",
+                    "uncheckedValue": "{Boolean}false",
+                    "checked": "{Boolean}true",
+                    "text": "Mostrar título?"
+                }
+            },
+            {
+                "field": "titleContent",
+                "type": "textfield",
+                "label": "Conteúdo do título",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "titleType",
+                "type": "select",
+                "label": "Tipo/Nível do título",
+                "json-property": "titleType",
+                "json-expose": true,
+                "attributes": {
+                    "defaultValue": "h1",
+                    "value": "h1"
+                },
+                "items": [
+                    {
+                        "field": "h1",
+                        "attributes": {
+                            "selected": "true",
+                            "text": "H1",
+                            "value": "h1"
+                        }
+                    },
+                    {
+                        "field": "h2",
+                        "attributes": {
+                            "text": "H2",
+                            "value": "h2"
+                        }
+                    },
+                    {
+                        "field": "h3",
+                        "attributes": {
+                            "text": "H3",
+                            "value": "h3"
+                        }
+                    }
+                ]
+            },
+            {
+                "field": "titleSize",
+                "type": "numberfield",
+                "label": "Tamanho do título (em px)",
+                "json-expose": true,
+                "attributes": {
+                    "max": "{Double}128",
+                    "min": "{Double}16",
+                    "step": "1",
+                    "value": "{Long}64"
+                }
+            },
+            {
+                "field": "titleColor",
+                "type": "colorfield",
+                "label": "Escolha uma cor para o título",
+                "json-expose": true,
+                "attributes": {
+                  "defaultValue": "#333333",
+                  "value": "#333333",
+                  "showDefaultColors": "{Boolean}false",
+                  "variant": "default"
+                },
+                "items": [
+                  {
+                      "field": "black",
+                      "attributes": {
+                          "value": "#000000"
+                      }
+                  },
+                  {
+                      "field": "blue",
+                      "attributes": {
+                          "value": "#0000FF"
+                      }
+                  },
+                  {
+                      "field": "green",
+                      "attributes": {
+                          "value": "#00FF00"
+                      }
+                  },
+                  {
+                      "field": "red",
+                      "attributes": {
+                          "value": "#FF0000"
+                      }
+                  }
+                ]
+            },
+            {
+                "field": "showText",
+                "type": "checkbox",
+                "json-expose": true,
+                "attributes": {
+                    "value": "{Boolean}true",
+                    "uncheckedValue": "{Boolean}false",
+                    "checked": "{Boolean}false",
+                    "text": "Mostrar texto?"
+                }
+            },
+            {
+                "field": "textContent",
+                "type": "textfield",
+                "label": "Conteúdo do texto",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "textSize",
+                "type": "numberfield",
+                "label": "Tamanho do texto (em px)",
+                "json-expose": true,
+                "attributes": {
+                    "max": "{Double}48",
+                    "min": "{Double}0",
+                    "step": "1",
+                    "value": "{Long}24"
+                }
+            },
+            {
+                "field": "textColor",
+                "type": "colorfield",
+                "label": "Escolha uma cor para o título",
+                "json-expose": true,
+                "attributes": {
+                  "defaultValue": "#333333",
+                  "value": "#333333",
+                  "showDefaultColors": "{Boolean}false",
+                  "variant": "default"
+                },
+                "items": [
+                  {
+                      "field": "black",
+                      "attributes": {
+                          "value": "#000000"
+                      }
+                  },
+                  {
+                      "field": "blue",
+                      "attributes": {
+                          "value": "#0000FF"
+                      }
+                  },
+                  {
+                      "field": "green",
+                      "attributes": {
+                          "value": "#00FF00"
+                      }
+                  },
+                  {
+                      "field": "red",
+                      "attributes": {
+                          "value": "#FF0000"
+                      }
+                  }
+                ]
+            },
+            {
+                "field": "buttonContent",
+                "type": "textfield",
+                "label": "Conteúdo do botão",
+                "json-expose": true,
+                "attributes": {}
+            },
+            {
+                "field": "buttonType",
+                "type": "select",
+                "label": "Estilo do botão",
+                "json-property": "buttonType",
+                "json-expose": true,
+                "attributes": {
+                    "defaultValue": "primary",
+                    "value": "primary"
+                },
+                "items": [
+                    {
+                        "field": "primary",
+                        "attributes": {
+                            "selected": "true",
+                            "text": "Primário",
+                            "value": "primary"
+                        }
+                    },
+                    {
+                        "field": "secondary",
+                        "attributes": {
+                            "text": "Secundário",
+                            "value": "secondary"
+                        }
+                    },
+                    {
+                        "field": "terciary",
+                        "attributes": {
+                            "text": "Terciário",
+                            "value": "terciary"
+                        }
+                    }
+                ]
+            },
+            {
+                "field": "buttonFontSize",
+                "type": "numberfield",
+                "label": "Tamanho do texto do botão (em px)",
+                "json-expose": true,
+                "attributes": {
+                    "max": "{Double}64",
+                    "min": "{Double}8",
+                    "step": "1",
+                    "value": "{Long}14"
+                }
+            }
+        ]
+    }
+}
